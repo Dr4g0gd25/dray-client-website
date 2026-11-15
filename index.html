@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dray Client – ein Minecraft-Client in Entwicklung.">
+  <meta name="theme-color" content="#10151f">
+  <title>Dray Client — In Development</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0b1018; --panel:#121b29; --line:#26364a; --text:#f4f7fb; --muted:#aab8ca; --green:#8be0ad; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; background:radial-gradient(ellipse at 50% -20%,#20354a 0%,var(--bg) 55%); color:var(--text); line-height:1.6; }
+    a { color:inherit; }
+    .wrap { width:min(1080px,calc(100% - 40px)); margin:auto; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:24px 0; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:850; letter-spacing:.12em; }
+    .logo { display:grid; place-items:center; width:42px; height:42px; border:1px solid #456078; border-radius:13px; background:linear-gradient(145deg,#263e53,#142332); font-size:19px; }
+    nav { display:flex; gap:22px; flex-wrap:wrap; }
+    nav a { color:var(--muted); text-decoration:none; font-size:14px; }
+    nav a:hover { color:var(--green); }
+    .hero { padding:100px 0 88px; text-align:center; }
+    .pill { display:inline-flex; align-items:center; gap:9px; border:1px solid #375244; background:#15271f; color:#a9edc1; border-radius:999px; padding:7px 13px; font-size:13px; font-weight:700; }
+    .dot { width:7px; height:7px; border-radius:50%; background:#7ee3a5; box-shadow:0 0 12px #7ee3a5; }
+    h1 { font-size:clamp(42px,8vw,76px); line-height:1.04; letter-spacing:-.055em; margin:25px 0 18px; }
+    .accent { color:var(--green); }
+    .lead { color:var(--muted); max-width:650px; margin:0 auto; font-size:clamp(16px,2vw,19px); }
+    .actions { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:32px; }
+    .btn { display:inline-block; text-decoration:none; border-radius:11px; padding:12px 19px; font-weight:750; border:1px solid var(--line); }
+    .btn.primary { background:var(--green); color:#0b1710; border-color:var(--green); }
+    .btn.secondary { color:var(--text); background:#121b29; }
+    section { padding:55px 0; }
+    .eyebrow { color:var(--green); text-transform:uppercase; letter-spacing:.16em; font-size:12px; font-weight:800; }
+    h2 { font-size:clamp(28px,4vw,40px); line-height:1.15; margin:10px 0 14px; letter-spacing:-.03em; }
+    .sub { color:var(--muted); max-width:690px; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin-top:28px; }
+    .card { padding:23px; border:1px solid var(--line); border-radius:17px; background:linear-gradient(145deg,rgba(25,38,55,.92),rgba(15,23,35,.92)); }
+    .card .icon { font-size:23px; }
+    h3 { margin:10px 0 7px; font-size:18px; }
+    .card p { color:var(--muted); margin:0; font-size:14px; }
+    .notice { border:1px solid #42506a; background:#141e2d; border-radius:16px; padding:22px; color:var(--muted); }
+    .notice strong { color:var(--text); }
+    footer { border-top:1px solid var(--line); margin-top:55px; padding:28px 0 40px; color:var(--muted); font-size:13px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+    @media (max-width:650px) { header { align-items:flex-start; flex-direction:column; } nav { gap:15px; } .hero { padding:70px 0 55px; } .grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#home" aria-label="Dray Client Startseite" style="text-decoration:none">
+        <span class="logo">D</span><span>DRAY CLIENT</span>
+      </a>
+      <nav aria-label="Hauptnavigation">
+        <a href="#about">Über das Projekt</a>
+        <a href="#features">Features</a>
+        <a href="#status">Status</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <span class="pill"><span class="dot"></span> Aktuell in Entwicklung</span>
+        <h1>Dein Minecraft.<br><span class="accent">Dein Dray Client.</span></h1>
+        <p class="lead">Dray Client ist ein Minecraft-Client-Projekt, das Schritt für Schritt entwickelt wird. Hier findest du künftig Neuigkeiten, Informationen und wichtige Links rund um das Projekt.</p>
+        <div class="actions">
+          <a class="btn primary" href="#features">Projekt entdecken</a>
+          <a class="btn secondary" href="#status">Entwicklungsstatus</a>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="eyebrow">Das Projekt</div>
+        <h2>Ein Client im Aufbau.</h2>
+        <p class="sub">Wir arbeiten daran, Dray Client aufzubauen und seine Funktionen sorgfältig zu entwickeln. Funktionen und Umfang können sich während der Entwicklung noch ändern.</p>
+      </section>
+
+      <section id="features">
+        <div class="eyebrow">Geplant</div>
+        <h2>Was Dray Client bieten soll</h2>
+        <p class="sub">Die folgenden Punkte beschreiben den aktuellen Projektplan und sind keine Aussage darüber, dass diese Funktionen bereits verfügbar sind.</p>
+        <div class="grid">
+          <article class="card"><div class="icon">⚙️</div><h3>Client-Funktionen</h3><p>Eine Sammlung nützlicher Minecraft-Client-Funktionen. Details werden im Laufe der Entwicklung ergänzt.</p></article>
+          <article class="card"><div class="icon">🛟</div><h3>Support-System</h3><p>Ein geplantes Support- und Ticket-System, über das Nutzer Hilfe anfragen können.</p></article>
+          <article class="card"><div class="icon">💬</div><h3>Discord-Anbindung</h3><p>Eine geplante Verbindung zu Discord, damit Support-Anfragen auch vom Team bearbeitet werden können.</p></article>
+          <article class="card"><div class="icon">🛡️</div><h3>Sicherheit & Stabilität</h3><p>Der Fokus liegt auf sicherer Verarbeitung, Fehlerbehandlung und dem Beheben von Bugs.</p></article>
+        </div>
+      </section>
+
+      <section id="status">
+        <div class="eyebrow">Entwicklungsstatus</div>
+        <h2>Noch nicht veröffentlicht.</h2>
+        <div class="notice"><strong>Dray Client befindet sich derzeit in aktiver Entwicklung.</strong><br>Es gibt noch keinen offiziellen Download. Informationen zu Veröffentlichung, unterstützten Versionen und verfügbaren Funktionen werden ergänzt, sobald sie feststehen.</div>
+      </section>
+
+      <section id="contact">
+        <div class="eyebrow">Kontakt</div>
+        <h2>Fragen zum Projekt?</h2>
+        <p class="sub">Offizielle Support- und Kontaktmöglichkeiten werden hier veröffentlicht, sobald sie eingerichtet sind.</p>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Dray Client. Alle Rechte vorbehalten.</span>
+      <span>Unabhängiges Projekt · Nicht mit Mojang oder Microsoft verbunden.</span>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
